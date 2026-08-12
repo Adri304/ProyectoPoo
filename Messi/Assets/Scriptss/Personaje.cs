@@ -2,15 +2,13 @@ using UnityEngine;
 
 public class Personaje : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public string nombre;
+    public int vida;
+    public int velocidad;
 
-    // Update is called once per frame
-    void Update()
+
+    public virtual void Morir()
     {
-        
+        Debug.Log(nombre + " ha muerto.");
     }
 }
