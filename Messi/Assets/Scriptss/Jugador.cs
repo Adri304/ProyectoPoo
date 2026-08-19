@@ -19,4 +19,10 @@ public class Jugador : Personaje
     {
        Debug.Log("El jugador ha muerto.");
     }
+
+    public void RecibirDano(int danio)
+    {
+        vida -= danio;
+        Debug.Log("El jugador ha recibido " + danio + " de daño. Vida restante: " + vida);
+    }
 }
